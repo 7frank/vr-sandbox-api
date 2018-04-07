@@ -1,0 +1,28 @@
+{
+  "name": "Region",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "position": {
+      "type": "Vector3",
+      "required": true
+    },
+    "dimensions": {
+      "type": "Vector3",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "entities": {
+      "type": "hasMany",
+      "model": "Entity",
+      "foreignKey": "regionID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

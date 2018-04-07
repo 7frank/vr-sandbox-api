@@ -1,0 +1,29 @@
+{
+  "name": "Vector3",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "x": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "y": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "z": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

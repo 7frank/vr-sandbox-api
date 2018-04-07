@@ -1,0 +1,29 @@
+{
+  "name": "BoxRegionType",
+  "base": "RegionType",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "height": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    },
+    "width": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    },
+    "depth": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
