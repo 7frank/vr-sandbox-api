@@ -1,0 +1,25 @@
+{
+  "name": "World",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "id": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "regions": {
+      "type": "hasMany",
+      "model": "Region",
+      "foreignKey": "worldID"
+    }
+
+  },
+  "acls": [],
+  "methods": {}
+}

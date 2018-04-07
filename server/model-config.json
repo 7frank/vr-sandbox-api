@@ -69,5 +69,9 @@
   "Region": {
     "dataSource": "mongoDB",
     "public": true
+  },
+  "World": {
+    "dataSource": "mongoDB",
+    "public": true
   }
 }

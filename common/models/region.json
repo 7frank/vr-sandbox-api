@@ -13,6 +13,9 @@
     "dimensions": {
       "type": "Vector3",
       "required": true
+    },
+    "worldID": {
+      "type": "string"
     }
   },
   "validations": [],
@@ -21,6 +24,11 @@
       "type": "hasMany",
       "model": "Entity",
       "foreignKey": "regionID"
+    },
+    "world": {
+      "type": "belongsTo",
+      "model": "World",
+      "foreignKey": "worldID"
     }
   },
   "acls": [],
